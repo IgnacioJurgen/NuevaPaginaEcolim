@@ -1,0 +1,46 @@
+# ===================================================================
+#  Ecolim Landing Page – .gitignore
+# ===================================================================
+
+# ---------- TEMPLATE ANTIGUO (BootstrapMade "Impact") ----------
+# Ya no se usan: Bootstrap, JS y librerías ahora vienen por CDN
+assets/vendor/
+assets/js/main.js
+assets/scss/
+assets/css/main.css
+
+# Formulario antiguo (ahora integrado en index.html)
+formulario.html
+forms/
+
+# ---------- PYTHON / BACKEND ----------
+python/__pycache__/
+python/*.pyc
+python/*.pyo
+python/.env
+python/venv/
+python/.venv/
+python/env/
+python/*.egg-info/
+python/dist/
+python/build/
+
+# ---------- IDE / EDITOR ----------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------- OS ----------
+*.log
+*.tmp
+*.bak
+*.orig
+
+# ---------- NODE (por si se usa en el futuro) ----------
+node_modules/
+package-lock.json
