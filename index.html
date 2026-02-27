@@ -192,7 +192,7 @@
           <div class="col-lg-6 order-1 order-lg-2 text-center">
             <img src="assets/img/NUEVO logo papa ecolim.png"
               alt="Logo Ecolim - Servicio de fumigación ecológica en Peñaflor y Región Metropolitana"
-              class="img-fluid hero-img" width="480" height="480">
+              class="img-fluid hero-img" width="580" height="580">
           </div>
         </div>
       </div>
@@ -580,8 +580,7 @@
           </div>
           <!-- Form -->
           <div class="col-lg-8">
-            <form method="post" id="contactForm" action="https://slow-elvira-ecolim-50df7da4.koyeb.app/submit"
-              class="contact-form" novalidate>
+            <form method="post" id="contactForm" action="#" class="contact-form" novalidate>
               <!-- Honeypot anti-spam -->
               <div class="d-none" aria-hidden="true">
                 <input type="text" name="website" tabindex="-1" autocomplete="off">
@@ -701,6 +700,11 @@
   <!-- SweetAlert2 -->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
+  <!-- ===================== CONFIG (editar URL del backend aquí) ===================== -->
+  <script>
+    window.ECOLIM_API_URL = ''; // ← Pega aquí tu URL de Koyeb, ej: https://tu-api.koyeb.app/submit
+  </script>
+
   <!-- ===================== VANILLA JS ===================== -->
   <script>
     (function () {
@@ -728,7 +732,7 @@
 
       /* ---------- FORM SUBMIT with reCAPTCHA (Vanilla JS, no jQuery) ---------- */
       /* === API Backend (Koyeb) === */
-      const API_URL = 'https://slow-elvira-ecolim-50df7da4.koyeb.app/submit';
+      const API_URL = window.ECOLIM_API_URL || '';
       const RECAPTCHA_SITE_KEY = '6LcHpHcsAAAAACE-0LGDdp5q86hwStLlUWCIlL2u';
 
       const contactForm = document.getElementById('contactForm');

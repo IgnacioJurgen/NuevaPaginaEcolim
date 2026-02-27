@@ -287,7 +287,7 @@ img {
 }
 
 .hero-img {
-  max-width: 280px;
+  max-width: 380px;
   animation: heroFloat 4s ease-in-out infinite;
 }
 
@@ -939,21 +939,29 @@ img {
 }
 
 /* ===================================================================
+   RECAPTCHA BADGE (ocultar — sigue funcionando por detrás)
+   Google permite ocultarlo si incluyes texto de privacidad.
+   =================================================================== */
+.grecaptcha-badge {
+  visibility: hidden !important;
+}
+
+/* ===================================================================
    WHATSAPP FLOAT BUTTON
    =================================================================== */
 .whatsapp-float {
   position: fixed;
   right: 16px;
   bottom: 16px;
-  width: 56px;
-  height: 56px;
+  width: 68px;
+  height: 68px;
   background: #25d366;
   color: var(--color-white) !important;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.6rem;
+  font-size: 2rem;
   box-shadow: 0 4px 16px rgba(37, 211, 102, 0.4);
   z-index: 1050;
   transition: all var(--transition);
@@ -1036,7 +1044,7 @@ img {
   }
 
   .hero-img {
-    max-width: 360px;
+    max-width: 440px;
   }
 
   .counter-number {
@@ -1098,7 +1106,7 @@ img {
   }
 
   .hero-img {
-    max-width: 440px;
+    max-width: 520px;
   }
 
   .eco-counter-section {
@@ -1141,7 +1149,7 @@ img {
   }
 
   .hero-img {
-    max-width: 480px;
+    max-width: 580px;
   }
 }
 
@@ -1209,9 +1217,9 @@ img {
   }
 
   .whatsapp-float {
-    width: 52px;
-    height: 52px;
-    font-size: 1.4rem;
+    width: 60px;
+    height: 60px;
+    font-size: 1.8rem;
     right: 12px;
     bottom: 12px;
   }
